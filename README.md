@@ -378,38 +378,38 @@ Déploiement de Mongo :
 kubectl create -f deployment-Mongo.yaml
 ```
 Déploiement de Redis : 
-
+```sh
 kubectl create -f deployment-Redis.yaml
-
+```
 Les dépendances installées, nous pouvons procéder au déploiement de Share Latex : 
-
+```sh
 kubectl create -f deployment-Sharelatex.yaml
-
+```
 Pour récupérer des informations sur l'état actuel des pods : 
-
+```sh
 kubectl get pods
-
+```
 Informations détaillées sur un pod : 
-
+```sh
 kubectl logs [nom du pod]
-
+```
 Share Latex est maintenant joignable et prêt à l'utilisation.
 
 Quelques pistes pour le troobleshoting : 
 
 Lorsque un soucis survient lors d'un déploiement, plusieurs commandes permettent d'essayer d'isoler la source de ce dernier.
 Pour voir les logs : 
-
+```sh
 kubectl logs [nom du pod]
-
+```
 Concernant l'état actuel du déploiement, on peut utiliser : 
-
+```sh
 kubectl describe [nom du pod]
-
+```
 Lorsque vous souhaitez mettre à jour le déploiement, vous pouvez utiliser : 
-
+```sh
 kubectl apply -f [nom du fichier de deploiement] 
-
+```
 Si le deploiement n'existe pas, il sera crée. Si il existe il sera mis à jour.
 
 
