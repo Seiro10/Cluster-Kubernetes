@@ -374,9 +374,9 @@ Cette étape consiste à configurer le pod en définissant notamment l'image qui
 La création de fichiers étant terminée, nous pouvons passer au déploiement en ligne de commandes.
 
 Déploiement de Mongo : 
-
+```sh
 kubectl create -f deployment-Mongo.yaml
-
+```
 Déploiement de Redis : 
 
 kubectl create -f deployment-Redis.yaml
